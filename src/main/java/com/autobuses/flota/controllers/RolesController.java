@@ -23,8 +23,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @RestController
 public class RolesController {
 	@Autowired
-	protected RolesService rolesService;
-	
+	protected RolesService rolesService;	
 	protected ObjectMapper mapper;
 
 	@RequestMapping(value = "/guardarRol", method = RequestMethod.POST)
@@ -45,5 +44,4 @@ public class RolesController {
 		return  rolesService.findAll();
 	}
 	
-
 }
